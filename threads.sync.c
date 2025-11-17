@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
     pthread_mutex_unlock(&lock);
 
     pthread_join(p, NULL);
-    printf("balance: &d/n", balance);   // should print: balance: 2
+    printf("balance: %d\n", balance);   // should print: balance: 2
     return 0;
 }
 
